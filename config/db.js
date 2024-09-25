@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-mongoose.connect(process.env.MONGOURL || "mongodb+srv://admin:admin@portfoliodatabase.x4b1p.mongodb.net/?retryWrites=true&w=majority&appName=PortfolioDatabase")
+mongoose.connect(process.env.MONGOURL)
 
 const connection = mongoose.connection;
 connection.on('connected', ()=>{
